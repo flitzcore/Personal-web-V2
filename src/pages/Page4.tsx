@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Page3: React.FC = () => {
+const Page4: React.FC = () => {
   return (
-    <div className="absolute inset-0" style={{ backgroundColor: '#D4D9D3' }}>
+    <div className="absolute inset-0 bg-white">
       <div className="flex h-full">
         {/* Left side - Image */}
-        <div className="w-1/2 h-screen flex items-center p-0 m-0">
+        <div className="w-1/2 h-screen flex items-center  p-0 m-0">
           <img 
-            src="/images/page3.jpg" 
-            alt="Page 3" 
+            src="/images/page4.jpg" 
+            alt="Page 4" 
             className="h-full w-auto object-cover m-0 p-0"
             style={{ margin: 0, padding: 0 }}
           />
@@ -23,8 +23,8 @@ const Page3: React.FC = () => {
             transform: 'translate(-50%, -50%)',
             zIndex: 1000
           }}>
-            <h1 className="text-6xl font-bold mb-4">Page 3</h1>
-            <p className="text-xl">This is the third layered page</p>
+            <h1 className="text-6xl font-bold mb-4">Page 4</h1>
+            <p className="text-xl">This is the fourth layered page</p>
             <p className="text-lg mt-4">Scroll through 3 dummy pages to see transition</p>
           </div>
         </div>
@@ -33,4 +33,4 @@ const Page3: React.FC = () => {
   );
 };
 
-export default Page3;
+export default Page4;
