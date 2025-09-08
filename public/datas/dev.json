@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "description": "Moru, a smart routine-building app that recommends daily tasks like reading and exercise.",
+    "image": "/images/dev/moru.png",
+    "techStack": ["Android", "Express", "GCP", "MySQL"]
+  },
+  {
+    "id": 2,
+    "description": "Gatot Accounting, a web app that automatically transforms receipts into accurate ledgers and financial reports.",
+    "image": "/images/dev/gatot_acc.png",
+    "techStack": ["Next.js", "Express", "MongoDB", "OCR"]
+  },
+  {
+    "id": 3,
+    "description": "Rongsokin is an app that makes it easy to sell unused items or trash directly to local scavengers.",
+    "image": "/images/dev/rongsokin.png",
+    "techStack": ["Android", "Firebase"]
+  }
+]

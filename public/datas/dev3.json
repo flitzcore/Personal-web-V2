@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "description": "Blockchain-based supply chain tracking system ensuring transparency and authenticity of products.",
+    "image": "/images/dev/blockchain.jpg",
+    "techStack": ["Solidity", "Web3.js", "Ethereum", "IPFS", "MetaMask"]
+  },
+  {
+    "id": 2,
+    "description": "IoT dashboard for smart home automation with real-time monitoring and control capabilities.",
+    "image": "/images/dev/iot.jpg",
+    "techStack": ["React", "MQTT", "Raspberry Pi", "Arduino", "Firebase"]
+  },
+  {
+    "id": 3,
+    "description": "Machine learning platform for predictive analytics and automated decision making in business processes.",
+    "image": "/images/dev/ml.jpg",
+    "techStack": ["Python", "Scikit-learn", "Pandas", "Jupyter", "Docker"]
+  }
+]

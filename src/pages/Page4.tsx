@@ -15,13 +15,11 @@ const Page4: React.FC = () => {
         </div>
         
         {/* Right side - Content */}
-        <div className="w-1/2 flex items-center justify-center">
-          <div className="text-center text-black" style={{ 
-            position: 'absolute',
-            top: '50vh', 
-            left: '75vw', 
-            transform: 'translate(-50%, -50%)',
-            zIndex: 1000
+        <div className="w-1/2 flex items-center justify-start pl-8">
+          <div className="text-left text-black" style={{ 
+            zIndex: 1000,
+            width: '40vw',
+            maxWidth: '600px'
           }}>
             <h1 className="text-6xl font-bold mb-4">Page 4</h1>
             <p className="text-xl">This is the fourth layered page</p>

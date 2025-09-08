@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "description": "A modern e-learning platform with interactive courses, progress tracking, and certificate generation.",
+    "image": "/images/dev/elearning.jpg",
+    "techStack": ["React", "Node.js", "MongoDB", "Stripe", "AWS"]
+  },
+  {
+    "id": 2,
+    "description": "Real-time collaboration tool for remote teams with video calls, screen sharing, and project management.",
+    "image": "/images/dev/collaboration.jpg",
+    "techStack": ["Vue.js", "WebRTC", "Socket.io", "PostgreSQL", "Docker"]
+  },
+  {
+    "id": 3,
+    "description": "AI-powered content management system that automatically categorizes and optimizes digital assets.",
+    "image": "/images/dev/cms.jpg",
+    "techStack": ["Python", "TensorFlow", "FastAPI", "Redis", "OpenAI"]
+  }
+]
