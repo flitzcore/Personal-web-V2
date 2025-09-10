@@ -5,7 +5,6 @@ interface LayeredPageProps {
   dummyPageCount: number;
   zIndex: number;
   backgroundColor: string;
-  pageNumber: number;
   startOffset: number; // Where this layer starts in the scroll
 }
 
@@ -14,7 +13,6 @@ const LayeredPage: React.FC<LayeredPageProps> = ({
   dummyPageCount, 
   zIndex, 
   backgroundColor,
-  pageNumber,
   startOffset
 }) => {
   const [height, setHeight] = useState('100vh');

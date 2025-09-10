@@ -1,20 +1,31 @@
 [
   {
     "id": 1,
-    "description": "Moru, a smart routine-building app that recommends daily tasks like reading and exercise.",
-    "image": "/images/dev/moru.png",
-    "techStack": ["Android", "Express", "GCP", "MySQL"]
+    "title": "> I build IoT Projects",
+    "description": "ACE project is an IoT project that monitors real-time inventory flow, user authentication, and role-based access.",
+    "image": "/images/dev/iot.png",
+    "techStack": ["MQTT", "ESP32", "GCP","MongoDB"]
   },
   {
     "id": 2,
-    "description": "Gatot Accounting, a web app that automatically transforms receipts into accurate ledgers and financial reports.",
+    "title": "> I build Web Apps",
+    "description": "Gatot Accounting is a web app that automatically transforms receipts into accurate ledgers and financial reports.",
     "image": "/images/dev/gatot_acc.png",
     "techStack": ["Next.js", "Express", "MongoDB", "OCR"]
   },
   {
-    "id": 3,
+    "id": 2,
+    "title": "> I build Mobile Apps",
     "description": "Rongsokin is an app that makes it easy to sell unused items or trash directly to local scavengers.",
     "image": "/images/dev/rongsokin.png",
     "techStack": ["Android", "Firebase"]
+  },
+  
+  {
+    "id": 4,
+    "title": "> Contact Me",
+    "description": "Need a programmer? Contact me!",
+    "image": "/images/dev/contactMe.png",
+    "techStack": ["LinkedIn", "Email"]
   }
 ]

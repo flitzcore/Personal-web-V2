@@ -38,21 +38,8 @@ const Page1: React.FC = () => {
              <ScrollCarousel 
                className="w-full h-30vh min-h-200px max-h-400px" 
                spotlightColor="rgba(61, 18, 134, 0.73)"
-               dummyPageCount={3}
-               carouselConfigs={[
-                 {
-                   jsonPath: "/datas/dev.json",
-                   title: 'I create <span class="font-bold">mobile and web app</span>'
-                 },
-                 {
-                   jsonPath: "/datas/dev2.json",
-                   title: 'I build <span class="font-bold">innovative solutions</span>'
-                 },
-                 {
-                   jsonPath: "/datas/dev3.json",
-                   title: 'I develop <span class="font-bold">cutting-edge technology</span>'
-                 }
-               ]}
+               jsonPath="/datas/dev.json"
+               dummyPageCount={4}
              />
           </div>
         </div>
