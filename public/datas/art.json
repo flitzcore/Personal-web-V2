@@ -4,7 +4,7 @@
     "title": "> I build IoT Projects",
     "description": "ACE project is an IoT project that monitors real-time inventory flow, user authentication, and role-based access.",
     "image": "/images/dev/iot.png",
-    "techStack": ["MQTT", "ESP32", "GCP","MongoDB"]
+    "techStack": ["MQTT", "ESP32", "GCP", "MongoDB"]
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@
     "image": "/images/dev/rongsokin.png",
     "techStack": ["Android", "Firebase"]
   },
-  
+
   {
     "id": 4,
     "title": "> Contact Me",

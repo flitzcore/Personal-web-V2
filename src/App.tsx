@@ -8,21 +8,21 @@ import Page4 from './pages/Page4';
 function App() {
   // Calculate start offsets based on dummy page counts (3 dummy pages each)
   const page1StartOffset = 0;
-  const page2StartOffset = 4; // After 3 dummy pages
-  const page3StartOffset = 7; // After 6 dummy pages
-  const page4StartOffset = 10; // After 9 dummy pages
+  const page2StartOffset = 5; // After 3 dummy pages
+  const page3StartOffset = 8; // After 6 dummy pages
+  const page4StartOffset = 11; // After 9 dummy pages
 
   return (
     <div className="App">
       {/* Dummy pages for scrolling - 3 dummy pages for each of the 4 pages */}
-      <DummyPages count={4} />
+      <DummyPages count={5} />
       <DummyPages count={3} />
       <DummyPages count={3} />
       <DummyPages count={3} />
       
       {/* Layered pages with absolute positioning */}
       <LayeredPage 
-        dummyPageCount={4} 
+        dummyPageCount={5} 
         zIndex={40} 
         backgroundColor="transparent"
         startOffset={page1StartOffset}
