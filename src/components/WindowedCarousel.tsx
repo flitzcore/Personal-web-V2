@@ -14,12 +14,16 @@ interface WindowedCarouselProps {
   spotlightColor?: string;
   jsonPath: string;
   dummyPageCount: number;
+  startFromFirst?: boolean;
+  startOffset?: number;
 }
 
 const WindowedCarousel: React.FC<WindowedCarouselProps> = ({
   className = "",
   jsonPath,
   dummyPageCount,
+  startFromFirst = false,
+  startOffset = 0,
 }) => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [currentDummyPage, setCurrentDummyPage] = useState(0);
@@ -56,14 +60,28 @@ const WindowedCarousel: React.FC<WindowedCarouselProps> = ({
       const scrollTop = window.scrollY;
       const windowHeight = window.innerHeight;
 
-      // Calculate which dummy page we're currently on
-      const newDummyPage = Math.floor(scrollTop / windowHeight);
-
-      // Clamp to valid range
+      // Calculate relative position within this page's range
+      const relativeScrollTop = Math.max(
+        0,
+        scrollTop - startOffset * windowHeight
+      );
+      const newDummyPage = Math.floor(relativeScrollTop / windowHeight);
       const clampedPage = Math.max(
         0,
         Math.min(newDummyPage, dummyPageCount - 1)
       );
+
+      // Debug logging
+      console.log("WindowedCarousel scroll debug:", {
+        scrollTop,
+        startOffset,
+        relativeScrollTop,
+        windowHeight,
+        newDummyPage,
+        clampedPage,
+        currentDummyPage,
+        projectsLength: projects.length,
+      });
 
       setCurrentDummyPage(clampedPage);
     };
@@ -73,7 +91,7 @@ const WindowedCarousel: React.FC<WindowedCarouselProps> = ({
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [dummyPageCount]);
+  }, [dummyPageCount, startFromFirst, projects.length, startOffset]);
 
   if (isLoading) {
     return (
@@ -124,6 +142,14 @@ const WindowedCarousel: React.FC<WindowedCarouselProps> = ({
   // Calculate which project to show based on dummy page
   const currentProjectIndex = currentDummyPage % projects.length;
   const currentProject = projects[currentProjectIndex];
+
+  // Debug logging
+  console.log("WindowedCarousel project debug:", {
+    currentDummyPage,
+    currentProjectIndex,
+    currentProject: currentProject?.title,
+    projectsLength: projects.length,
+  });
 
   return (
     <div className={`w-full h-30vh min-h-200px max-h-400px ${className}`}>

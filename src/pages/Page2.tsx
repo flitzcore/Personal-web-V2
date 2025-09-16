@@ -57,7 +57,9 @@ const Page2: React.FC = () => {
                 className="w-full h-30vh min-h-200px max-h-400px"
                 spotlightColor="rgba(61, 18, 134, 0.73)"
                 jsonPath="/datas/art.json"
-                dummyPageCount={4}
+                dummyPageCount={3}
+                startFromFirst={true}
+                startOffset={5}
               />
             </div>
           </div>
